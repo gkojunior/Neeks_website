@@ -1,0 +1,28 @@
+
+
+	img {
+		height: 25%;
+		width: 25%;
+		display: block;
+		/* border-radius: var(--radius); */
+		object-fit: cover;
+	}
+	p {
+		line-height: 2;
+		max-width: 45em;
+		margin: 0 auto;
+		margin-top: 2rem;
+		color: green ;
+	}
+	.title {
+		text-align: left;
+		padding-bottom: 10px;
+		color: green;
+	}
+	.underline {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+	/* @media (min-width: 992px) {
+grid-template-columns:flex-flow;	
+} */
