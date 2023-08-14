@@ -1,25 +1,49 @@
-import styles from './Navbar.module.css'
-import { Link } from 'react-router-dom'
-// import { FaBars } from 'react-icons/fa'
-import { links } from '../utils/data'
-
-
-
+import React, { useState } from 'react'
+import './Navbar.css'
+import { FaTimes } from 'react-icons/fa'
+import { HiMenuAlt3 } from 'react-icons/hi'
+import { pageLinks, socialLinks } from '../utils/data'
 
 const Navbar = () => {
+	const [toggle, setToggle] = useState(false)
+	const handleToggle = () => {
+		setToggle(!toggle)
+	}
 	return (
-		<div className={styles.container}>
-			<ul className={styles.nav_links}>
-				{links.map((link) => {
-					const { id, text, url } = link
+		<nav className={toggle ? 'navbar expanded' : 'navbar'}>
+			<h1 className='logo'>Shaneka Owusu</h1>
+			<ul class='nav-icons'>
+				{socialLinks.map((link) => {
+					const { id, href, icon } = link
 					return (
 						<li key={id}>
-							<Link to={url}>{text}</Link>
+							<a
+								href={href}
+								target='_blank'
+								rel='noreferrer'
+								className='nav-icons'
+							>
+								<i className={icon}></i>
+							</a>
 						</li>
 					)
 				})}
 			</ul>
-		</div>
+			<ul className='links'>
+				{pageLinks.map((link) => {
+					return (
+						<li key={link.id}>
+							<a href={link.href} className='nav-link'>
+								{link.text}
+							</a>
+						</li>
+					)
+				})}
+			</ul>
+			<div className='toogle' onClick={handleToggle}>
+				{toggle ? <FaTimes /> : <HiMenuAlt3 />}
+			</div>
+		</nav>
 	)
 }
 
