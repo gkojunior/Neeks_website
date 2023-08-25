@@ -45,3 +45,11 @@
 .copyright span {
 	margin-left: 0.5rem;
 }
+
+
+@media screen and (max-width: 320px) {
+	.footer {
+	color: rgb(0, 0, 0);
+
+}
+}
