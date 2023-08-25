@@ -9,22 +9,22 @@ const Footer = () => {
 		<footer className='footer'>
 			<ul className='footer-links'>
 				<li>
-					<a href='#home' className='footer-link'>
+					<a href='/' className='footer-link'>
 						home
 					</a>
 				</li>
 				<li>
-					<a href='#about' className='footer-link'>
+					<a href='https://shaneka.netlify.app/creations' className='footer-link'>
 						creations
 					</a>
 				</li>
 				<li>
-					<a href='#services' className='footer-link'>
+					<a href='https://shaneka.netlify.app/about' className='footer-link'>
 						about
 					</a>
 				</li>
 				<li>
-					<a href='#featured' className='footer-link'>
+					<a href='https://shaneka.netlify.app/contact' className='footer-link'>
 						contact
 					</a>
 				</li>

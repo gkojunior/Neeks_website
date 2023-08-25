@@ -5,10 +5,6 @@ import project4 from '../../../assets/p4.jpeg'
 import project5 from '../../../assets/p5.jpg'
 import project6 from '../../../assets/p6.jpeg'
 
-// import { AiFillFacebook } from 'react-icons/ai'
-// import { FaTwitter } from 'react-icons/fa'
-// import { AiFillInstagram } from 'react-icons/ai'
-
 export const pageLinks = [
 	{ id: 1, href: '/', text: 'Home' },
 	{ id: 2, href: '/creations', text: 'Creations' },

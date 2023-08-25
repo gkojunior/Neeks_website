@@ -6,16 +6,13 @@ const Welcome = () => {
 	return (
 		<div className='welcomePage'>
 			<video src={BgVideo} autoPlay muted loop className='video-bg' />
-			<div className='bg-overlay'></div>
+			{/* <div className='bg-overlay'></div> */}
 			<div className='home-text'>
-				<h1>Welcome!</h1>
-				<p>Hi! I'm Shaneka a Designer.</p>
+				<h2>Welcome to Paradise!</h2>
 				<div className='home-btn'>
-					{' '}
-					<a href='/creations'>Creactions</a>
+					<a href='https://shaneka.netlify.app/creations'>Creations</a>
 				</div>
 			</div>
-			
 		</div>
 	)
 }

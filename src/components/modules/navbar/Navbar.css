@@ -5,7 +5,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgba(255, 255, 255, 0);
 }
 
 .navbar .logo {
@@ -41,6 +40,11 @@ a {
     display: flex;
   }
 
+@media screen and (max-width: 320px) {
+	.navbar {
+		background: rgb(230, 230, 230);
+	}
+}
 @media (max-width: 768px) {
 	.navbar {
 		position: relative;

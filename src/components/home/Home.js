@@ -1,12 +1,13 @@
 import React from 'react'
 import Welcome from '../modules/welcome/Welcome'
-import './home.css'
+import Creations from '../modules/creations/Creations'
 
 const Home = () => {
   return (
-    <div className='container'>
-      <Welcome/>
-    </div>
+    <>
+      <Welcome />
+      <Creations/>
+    </>
   )
 }
 

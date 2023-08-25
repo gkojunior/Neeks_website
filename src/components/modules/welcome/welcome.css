@@ -1,91 +1,144 @@
-.welcomePage{
-    width: 100%;
-    height: 75vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    transition: 0.5s;
-    
+.welcomePage {
+	width: 100%;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	transition: 0.5s;
 }
-.video-bg{
-    width:100%;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    object-fit: cover;
+.video-bg {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+	object-fit: cover;
 }
-.bg-overlay {
-    height: 100vh;
-    width: 90%;
-    background-color: rgba(198, 198, 198, 0.2);
-    position: absolute;
-    top: 0;
-    z-index: 0;
-}
+/* .bg-overlay {
+	background-color: rgba(198, 198, 198, 0.2);
+	position: absolute;
+	top: 0;
+	z-index: 0;
+} */
 
 .menu {
-    height: 3em;
-    width: 4em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-left: 2em;
-    cursor: pointer;
+	height: 3em;
+	width: 4em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-left: 2em;
+	cursor: pointer;
 }
 
 .menu div {
-    width: 90%;
-    height: 0.25em;
-    background-color: white;
-    border-radius: 1em;
+	width: 90%;
+	height: 0.25em;
+	background-color: white;
+	border-radius: 1em;
 }
 
-.menu div:nth-of-type(2) {width: 40%;}
+.menu div:nth-of-type(2) {
+	width: 40%;
+}
 
 .home-text {
-    margin-top: 4rem;
-    width: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    z-index: 2;
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	z-index: 2;
 }
 
-h1 {
-    font-size: 6em;
-    animation-name: fade;
-    animation-duration: 4s;
+h2 {
+	animation-name: fade;
+	animation-duration: 4s;
+    margin-top: 15rem;
+
 }
 
 p {
-    justify-self: flex-end;
-    font-size: 2em;
+	justify-self: flex-end;
+	font-size: 2em;
 }
 
 .home-btn {
-    width: 6em;
-    height: 2em;
-    border: 2px solid white;
-    border-radius: 0.25em;
-    background-color: rgba(255, 255, 255, 0.457);
-    z-index: 1;
-    font-size: 2em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+	width: 6em;
+	height: 2em;
+	border: 2px solid rgb(192, 189, 189);
+	border-radius: 0.25em;
+	background-color: rgba(255, 255, 255, 0.457);
+	z-index: 1;
+	font-size: 2em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-top: 0.5rem;
 }
 
 /* ---------- Animation --------------- */
 @keyframes fade {
-    0% {
-        opacity: 0;
-        margin-left: 3em;
-    }
-    100% {
-        opacity: 1;
-    }
+	0% {
+		opacity: 0;
+		margin-left: 3em;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+/* --------- Phone view ------------ */
+@media screen and (min-width: 320px) {
+	.video-bg {
+		height: 100vh;
+	}
+	.home-text {
+		margin-top: 5rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.welcomePage {
+		height: 100vh;
+	}
+	.video-bg {
+		height: 100vh;
+	}
+	.home-text {
+		margin-top: 4rem;
+	}
+	h2 {
+		font-size: 1.5rem;
+	}
+}
+
+/* --------- Tablet view ------------ */
+@media screen and (max-width: 768px) {
+	.welcomePage {
+		height: 85vh;
+	}
+	.video-bg {
+		height: 100vh;
+	}
+	h1 {
+		font-size: 3rem;
+	}
+}
+
+/* --------- Laptop view ------------ */
+@media screen and (min-width: 769px) {
+	.welcomePage {
+		height: 60vh;
+	}
+	.video-bg {
+		height: 60vh;
+	}
+	h1 {
+		font-size: 3rem;
+	}
 }
