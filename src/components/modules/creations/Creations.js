@@ -1,7 +1,7 @@
 import styles from './Creations.module.css'
 
 const Creations = () => {
-    return <div className={styles.container}>My Work
+    return <div className={styles.container}>creations
     </div>
 }
 
