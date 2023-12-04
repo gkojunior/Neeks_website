@@ -11,9 +11,9 @@ import project6 from '../../../assets/p6.jpeg'
 
 export const pageLinks = [
 	{ id: 1, href: '/', text: 'Home' },
-	{ id: 2, href: 'shaneka.netlify.app/creations', text: 'Creations' },
-	{ id: 3, href: 'shaneka.netlify.app/about', text: 'About' },
-	{ id: 4, href: 'shaneka.netlify.app/contact', text: 'Contact' },
+	{ id: 2, href: 'creations', text: 'Creations' },
+	{ id: 3, href: '/about', text: 'About' },
+	{ id: 4, href: '/contact', text: 'Contact' },
 ]
 
 export const images = [

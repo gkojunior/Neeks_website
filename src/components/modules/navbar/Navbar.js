@@ -13,24 +13,7 @@ const Navbar = () => {
 	return (
 		<nav className={toggle ? 'navbar expanded' : 'navbar'}>
 			<h1 className='logo'>Shaneka Owusu</h1>
-			<nav className='socialMediaLink'>
-					<a
-						className='link'
-						href='https://www.linkedin.com/in/george-owusu-2a853411b/'
-					>
-						<AiFillLinkedin />
-					</a>
-
-					<a className='link' href='https://github.com/gkojunior'>
-						<AiFillGithub />
-					</a>
-					<a
-						className='link'
-						href='https://www.facebook.com/george.gmoney'
-					>
-						<AiFillFacebook />
-					</a>
-				</nav>
+	
 			<ul className='links'>
 				{pageLinks.map((link) => {
 					return (
@@ -42,6 +25,7 @@ const Navbar = () => {
 					)
 				})}
 			</ul>
+			
 			<div className='toogle' onClick={handleToggle}>
 				{toggle ? <FaTimes /> : <HiMenuAlt3 />}
 			</div>
