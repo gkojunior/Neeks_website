@@ -1,11 +1,13 @@
 import React from 'react'
-import Welcome from '../modules/welcome/Welcome'
+import Creations from '../creations/Creations'
+import Welcome from '../welcome/Welcome'
 import './home.css'
 
 const Home = () => {
   return (
     <div className='container'>
-      <Welcome/>
+      <Welcome />
+      <Creations />
     </div>
   )
 }
