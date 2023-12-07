@@ -7,46 +7,45 @@ import project6 from '../../../assets/p6.jpeg'
 
 export const pageLinks = [
 	{ id: 1, href: '/', text: 'Home' },
-	{ id: 2, href: 'creations', text: 'Creations' },
-	{ id: 3, href: 'about', text: 'About' },
-	{ id: 4, href: 'contact', text: 'Contact' },
+	{ id: 2, href: '/creations', text: 'Creations' },
+	{ id: 4, href: '/contact', text: 'Contact' },
 ]
 
-export const images = [
+export const creations = [
 	{
 		id: 0,
-		title: 'T1',
-		subtitle: 'T1 subtitle',
+		title: 'Braley & Thompson',
+		subtitle: 'Family Picnic',
 		image: project1,
 	},
 	{
 		id: 1,
-		title: 'T2',
-		subtitle: 'T2 subtitle',
+		title: 'The WindyPhilly  Card',
+		subtitle: 'Personal Card',
 		image: project2,
 	},
 	{
 		id: 2,
-		title: 'T3',
-		subtitle: 'T3 subtitle',
+		title: 'Posters',
+		subtitle: 'Baby Shower',
 		image: project3,
 	},
 	{
 		id: 3,
-		title: 'T4',
-		subtitle: 'T4 subtitle',
+		title: 'Imani Birthday Flyer',
+		subtitle: 'Birthday bash',
 		image: project4,
 	},
 	{
 		id: 4,
-		title: 'T5',
-		subtitle: 'T5 subtitle',
+		title: 'Prime Care',
+		subtitle: 'Home health services',
 		image: project5,
 	},
 	{
 		id: 5,
-		title: 'T6',
-		subtitle: 'T6 subtitle',
+		title: 'Jersey Birthday Flyer',
+		subtitle: 'Flyer',
 		image: project6,
 	},
 ]
