@@ -3,6 +3,30 @@
   padding: 0%;
   box-sizing: border-box;
 }
+:root {
+	/* primary/main color */
+	--clr-brown-light: hsl(21, 98%, 82%, 0.88);
+
+	--clr-brown: hsla(21, 88%, 59%, 0.883);
+	--clr-brown-dark: hsla(21, 46%, 47%, 0.85);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-black: #222;
+	--transition: all 0.3s linear;
+	--spacing: 0.1rem;
+	--radius: 0.25rem;
+	--light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	--dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	--max-width: 1170px;
+	--fixed-width: 620px;
+
+	/* Dark-Mode */
+	--body_background: hsl(0, 0%, 95%);
+	--body_background2: hsl(0, 0%, 100%);
+
+	--body_color: black;
+	--link_color: navy;
+	--body_color_grey: hsl(0, 0%, 0%);
+}
 
 body {
   margin: 0;
@@ -14,13 +38,23 @@ body {
   color: #000;
 }
 
+[data-theme='dark'] {
+	--body_background: #282c34;
+	--body_color_white: hsl(0, 0%, 100%);
+	--body_color_brown: hsl(21, 48%, 57%);
+	--body_color_black: hsl(0, 0%, 0%);
+	--body_color_grey: hsl(0, 0%, 87%);
+	--body_color: rgb(0, 0, 0);
+	--body_background2: #484848;
+}
+
 .slider-container {
   margin: 0 auto;
   margin-top: 10rem;
   width: 80vw;
   max-width: 800px;
   position: relative;
-  height: 450px;
+  height: 100vh;
   overflow: hidden;
 }
 .slide {
