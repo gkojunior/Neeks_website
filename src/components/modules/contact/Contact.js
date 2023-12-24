@@ -21,7 +21,7 @@ const Contact = () => {
 			of my social websites. I am looking forward to hearing from you!
 		</p>
 		<a href='/contact' className='btn'>
-			contact me
+			Email me!
 		</a>
 	</div>
 </section>
