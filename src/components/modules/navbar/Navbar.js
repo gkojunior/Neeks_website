@@ -5,7 +5,7 @@ import { FaTimes } from 'react-icons/fa'
 import { HiMenuAlt3 } from 'react-icons/hi'
 import DarkMode from '../DarkMode/DarkMode'
 //Animation
-import Lottie from 'lottie-react'
+
 import turtle from '../../../assets/turtle.svg'
 
 const Navbar = () => {
