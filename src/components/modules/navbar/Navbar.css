@@ -1,10 +1,9 @@
-ul{
+ul {
 	display: flex;
 	list-style: none;
-} 
-li{
+}
+li {
 	text-decoration: none;
-
 }
 .navbar {
 	width: 100%;
@@ -13,17 +12,26 @@ li{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background-color: rgba(255, 255, 255, 0);
+	background-color: var(--body_background2);
+	position: fixed;
+	top: 0;
+	z-index: 1;
 }
-
+.turtle {
+	width: 3em;
+	padding-left: 0.5em;
+}
+.iconContainer {
+	display: flex;
+	align-items: center;
+}
 .navbar .logo {
-	color: rgb(76, 162, 0);
-	font-size: 1.3rem;
+	color: burlywood;
 	font-weight: 600;
 }
 
 .navbar .links {
-	color: rgb(76, 162, 0);
+	color: burlywood;
 
 	display: flex;
 	cursor: pointer;
@@ -32,7 +40,7 @@ li{
 
 .navbar .links li {
 	margin: 0 15px;
-	font-size: 14px;
+	font-size: 1em;
 	font-weight: 600;
 }
 
@@ -40,19 +48,37 @@ li{
 	display: none;
 }
 a {
-	padding: 0 .5em 0 .5em;
+	padding: 0 0.5em 0 0.5em;
 	color: rgb(76, 162, 0);
 	text-decoration: none;
 	font-size: 1.1rem;
 }
 .nav-icons {
-    display: flex;
-  }
-
+	display: flex;
+}
+@media (max-width: 320px) {
+	.navbar.logo{
+		font-size: 1em;
+	}
+	.darkmode {
+		position: fixed;
+		top:13px;
+		right:15px;
+		
+	}
+}
 @media (max-width: 768px) {
+	.turtle{
+		position: fixed;
+		top: 15px;
+		left: 11em;
+	}
 	.navbar {
-		position: relative;
+		/* position: relative; */
 		transition: 0.5s height ease-in-out;
+		position: fixed;
+		top: 0;
+		z-index: 1;
 	}
 	.navbar.expanded {
 		height: 100vh;
@@ -77,6 +103,7 @@ a {
 		color: rgb(0, 0, 0);
 	}
 	.navbar .logo {
+		font-size: 1.3em;
 		position: absolute;
 		top: 23px;
 		left: 20px;
@@ -84,8 +111,10 @@ a {
 	.navbar .toogle {
 		display: block;
 		position: absolute;
-		top: 28px;
+		top: 15px;
 		right: 20px;
+		font-size: 2em;
+		color: rgb(76, 162, 0);
 	}
 	.navbar .links {
 		display: none;
@@ -110,4 +139,12 @@ a {
 	.navbar.expanded .links li a {
 		color: rgb(0, 0, 0);
 	}
+	.darkmode {
+		margin-right: 10%;
+		position: fixed;
+		top:13px;
+		right:30px;
+		
+	}
+	
 }
